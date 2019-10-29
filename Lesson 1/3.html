@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        let result1 = 10+10+"10";
+        let result2 = 10+"10"+10;
+        let result3 = 10+10+ +"10";
+        let result4 = 10/ -"";
+        let result5 = 10/ +"2,5";
+        console.log(result1);
+        console.log(result2);
+        console.log(result3);
+        console.log(result4);
+        console.log(result5);
+        /*
+          1. Включаю строгий режим написания кода.
+          2. К 10 прибавляю 10 получается 20
+          3. 20 конкатенируется с 10 и получается 2010
+          4. 2010 присваиваю в переменную result1
+          5. 10 конкатенируется с 10 и получается 1010
+          6. Так как 1010 после конкатенации стал строкой он далее конкатенируется с еще одной 10кой и получается 101010
+          7. 101010 присваиваю в переменную result2
+          8. К 10 прибавляю 10 и получается 20
+          9. К 20 прибавляю строку 10 которую унарный плюс делает числом и получаю 30
+         10. 30 присваиваю в переменную result3
+         11. 10 делю на пустую строку с унарным минусом получается выражение 10/-0 и получаю -infinity
+         12. -infinity присваиваю в переменную result4
+         13. 10 пытаюсь поделить на Nan (+"2,5") - дробное число должно иметь точку а не запятую в результате чего получаю Nan
+         14. Nan присваиваю в переменную result5
+         15. С помощью console.log вывожу в консоль result1
+         16. С помощью console.log вывожу в консоль result2
+         17. С помощью console.log вывожу в консоль result3
+         18. С помощью console.log вывожу в консоль result4
+         19. С помощью console.log вывожу в консоль result5
+       */
+        
+    </script>
+        
+</body>
+</html>

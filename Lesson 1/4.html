@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        
+        let mode = "normal";
+        // является корректным
+
+        let my_valu3 = 102;
+        // является корректным
+
+        let 3my_value3 = "102";
+        // не является корректным так как с чисел название переменных не может начинаться
+
+        let __hello__ = "world";
+        // является корректным
+
+        let $$$ = "money";
+        // является корректным так как спецсимвол $ единственный разрешенный в названии переменных
+
+        let !0_world = true;
+        // не является корректным так как со спецсимволов кроме $ название переменных не может начинаться
+        
+    </script>
+</body>
+</html>
